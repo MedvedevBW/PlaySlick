@@ -8,9 +8,6 @@ import scala.concurrent.Future
 import models._
 import dao._
 
-/**
- * Created by medvedev_vv on 24.01.17.
- */
 class BooksController @Inject() (bookDAO: BookDAO) extends Controller {
 
   def findAll = Action.async { implicit request =>

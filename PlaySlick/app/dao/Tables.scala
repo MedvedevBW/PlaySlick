@@ -12,11 +12,6 @@ trait Tables {
   import slick.model.ForeignKeyAction
   import slick.jdbc.{ GetResult => GR }
 
-  /*
-  lazy val schema: driver.SchemaDescription = Author.schema ++ Book.schema ++ AuthorBook.schema
-  @deprecated("Use .schema instead of .ddl", "3.0")
-  def ddl = schema
-*/
   /**
    * AUTHOR
    */

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/medvedev_vv/IdeaProjects/play-slick-master2/conf/routes
-// @DATE:Tue Jan 24 11:37:16 NOVT 2017
+// @DATE:Tue Jan 24 12:17:23 NOVT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }

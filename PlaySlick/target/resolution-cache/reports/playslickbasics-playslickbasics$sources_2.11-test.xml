@@ -7,10 +7,10 @@
 		revision="1.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170124113811"/>
+		date="20170124120241"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-test_2.11">
-			<revision name="2.4.6" status="release" pubdate="20151214132239" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="55">
+			<revision name="2.4.6" status="release" pubdate="20151214132239" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="56">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3873" time="0" location="/home/medvedev_vv/.ivy2/cache/com.typesafe.play/play-test_2.11/ivy-2.4.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-test_2.11/2.4.6/play-test_2.11-2.4.6.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.4.6" rev-constraint-default="2.4.6" rev-constraint-dynamic="2.4.6" callerrev="1.0-SNAPSHOT"/>
@@ -25,9 +25,9 @@
 			</revision>
 		</module>
 		<module organisation="org.fluentlenium" name="fluentlenium-core">
-			<revision name="0.10.3" status="release" pubdate="20141126144927" resolver="public" artresolver="public" homepage="https://github.com/FluentLenium/FluentLenium" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="62">
+			<revision name="0.10.3" status="release" pubdate="20141126144927" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FluentLenium/FluentLenium" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="3442" time="365" location="/home/medvedev_vv/.ivy2/cache/org.fluentlenium/fluentlenium-core/ivy-0.10.3.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.fluentlenium/fluentlenium-core/ivy-0.10.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fluentlenium/fluentlenium-core/0.10.3/fluentlenium-core-0.10.3.pom"/>
+				<metadata-artifact status="no" details="" size="6260" time="0" location="/home/medvedev_vv/.ivy2/cache/org.fluentlenium/fluentlenium-core/ivy-0.10.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fluentlenium/fluentlenium-core/0.10.3/fluentlenium-core-0.10.3.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="0.10.3" rev-constraint-default="0.10.3" rev-constraint-dynamic="0.10.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="fluentlenium-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="52877" time="0" location="/home/medvedev_vv/.ivy2/cache/org.fluentlenium/fluentlenium-core/srcs/fluentlenium-core-0.10.3-sources.jar">
@@ -40,7 +40,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-java">
-			<revision name="2.44.0" status="release" pubdate="20141024031531" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">
+			<revision name="2.44.0" status="release" pubdate="20141024031531" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="64">
 				<metadata-artifact status="no" details="" size="6968" time="0" location="/home/medvedev_vv/.ivy2/cache/org.seleniumhq.selenium/selenium-java/ivy-2.44.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/2.44.0/selenium-java-2.44.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.44.0" rev-constraint-default="2.44.0" rev-constraint-dynamic="2.44.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -54,7 +54,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-support">
-			<revision name="2.44.0" status="release" pubdate="20141024031505" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="93">
+			<revision name="2.44.0" status="release" pubdate="20141024031505" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="94">
 				<metadata-artifact status="no" details="" size="5988" time="0" location="/home/medvedev_vv/.ivy2/cache/org.seleniumhq.selenium/selenium-support/ivy-2.44.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/2.44.0/selenium-support-2.44.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.44.0" rev-constraint-default="2.44.0" rev-constraint-dynamic="2.44.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -68,7 +68,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-safari-driver">
-			<revision name="2.44.0" status="release" pubdate="20141024031441" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="91">
+			<revision name="2.44.0" status="release" pubdate="20141024031441" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="92">
 				<metadata-artifact status="no" details="" size="5911" time="0" location="/home/medvedev_vv/.ivy2/cache/org.seleniumhq.selenium/selenium-safari-driver/ivy-2.44.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/2.44.0/selenium-safari-driver-2.44.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.44.0" rev-constraint-default="2.44.0" rev-constraint-dynamic="2.44.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -82,7 +82,7 @@
 			</revision>
 		</module>
 		<module organisation="org.webbitserver" name="webbit">
-			<revision name="0.4.14" status="release" pubdate="20120713193639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webbitserver.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="92">
+			<revision name="0.4.14" status="release" pubdate="20120713193639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webbitserver.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="93">
 				<license name="BSD License" url="http://www.opensource.org/licenses/bsd-license"/>
 				<metadata-artifact status="no" details="" size="3499" time="0" location="/home/medvedev_vv/.ivy2/cache/org.webbitserver/webbit/ivy-0.4.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webbitserver/webbit/0.4.14/webbit-0.4.14.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="0.4.14" rev-constraint-default="0.4.14" rev-constraint-dynamic="0.4.14" callerrev="1.0-SNAPSHOT"/>
@@ -97,7 +97,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-ie-driver">
-			<revision name="2.44.0" status="release" pubdate="20141024031419" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="90">
+			<revision name="2.44.0" status="release" pubdate="20141024031419" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="91">
 				<metadata-artifact status="no" details="" size="6042" time="0" location="/home/medvedev_vv/.ivy2/cache/org.seleniumhq.selenium/selenium-ie-driver/ivy-2.44.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/2.44.0/selenium-ie-driver-2.44.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.44.0" rev-constraint-default="2.44.0" rev-constraint-dynamic="2.44.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -111,7 +111,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-firefox-driver">
-			<revision name="2.44.0" status="release" pubdate="20141024031325" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="89">
+			<revision name="2.44.0" status="release" pubdate="20141024031325" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="90">
 				<metadata-artifact status="no" details="" size="6055" time="0" location="/home/medvedev_vv/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/ivy-2.44.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/2.44.0/selenium-firefox-driver-2.44.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.44.0" rev-constraint-default="2.44.0" rev-constraint-dynamic="2.44.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -125,7 +125,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-htmlunit-driver">
-			<revision name="2.44.0" status="release" pubdate="20141024031358" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="75">
+			<revision name="2.44.0" status="release" pubdate="20141024031358" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="76">
 				<metadata-artifact status="no" details="" size="6077" time="0" location="/home/medvedev_vv/.ivy2/cache/org.seleniumhq.selenium/selenium-htmlunit-driver/ivy-2.44.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-htmlunit-driver/2.44.0/selenium-htmlunit-driver-2.44.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.44.0" rev-constraint-default="2.44.0" rev-constraint-dynamic="2.44.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -139,7 +139,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sourceforge.htmlunit" name="htmlunit">
-			<revision name="2.15" status="release" pubdate="20140603014620" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="76">
+			<revision name="2.15" status="release" pubdate="20140603014620" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="77">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7501" time="0" location="/home/medvedev_vv/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/ivy-2.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.15/htmlunit-2.15.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.15" rev-constraint-default="2.15" rev-constraint-dynamic="2.15" callerrev="1.0-SNAPSHOT"/>
@@ -154,7 +154,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-websocket">
-			<revision name="8.1.15.v20140411" status="release" pubdate="20140412010939" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="85">
+			<revision name="8.1.15.v20140411" status="release" pubdate="20140412010939" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="86">
 				<metadata-artifact status="no" details="" size="9348" time="0" location="/home/medvedev_vv/.ivy2/cache/org.eclipse.jetty/jetty-websocket/ivy-8.1.15.v20140411.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-websocket/8.1.15.v20140411/jetty-websocket-8.1.15.v20140411.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="8.1.15.v20140411" rev-constraint-default="8.1.15.v20140411" rev-constraint-dynamic="8.1.15.v20140411" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -168,7 +168,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-http">
-			<revision name="8.1.15.v20140411" status="release" pubdate="20140412010328" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="88">
+			<revision name="8.1.15.v20140411" status="release" pubdate="20140412010328" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="89">
 				<metadata-artifact status="no" details="" size="8686" time="0" location="/home/medvedev_vv/.ivy2/cache/org.eclipse.jetty/jetty-http/ivy-8.1.15.v20140411.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.15.v20140411/jetty-http-8.1.15.v20140411.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="8.1.15.v20140411" rev-constraint-default="8.1.15.v20140411" rev-constraint-dynamic="8.1.15.v20140411" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -182,7 +182,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-io">
-			<revision name="8.1.15.v20140411" status="release" pubdate="20140412010310" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="87">
+			<revision name="8.1.15.v20140411" status="release" pubdate="20140412010310" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="88">
 				<metadata-artifact status="no" details="" size="8542" time="0" location="/home/medvedev_vv/.ivy2/cache/org.eclipse.jetty/jetty-io/ivy-8.1.15.v20140411.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/8.1.15.v20140411/jetty-io-8.1.15.v20140411.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="8.1.15.v20140411" rev-constraint-default="8.1.15.v20140411" rev-constraint-dynamic="8.1.15.v20140411" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -196,7 +196,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-util">
-			<revision name="8.1.15.v20140411" status="release" pubdate="20140412010203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="86">
+			<revision name="8.1.15.v20140411" status="release" pubdate="20140412010203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="87">
 				<metadata-artifact status="no" details="" size="8918" time="0" location="/home/medvedev_vv/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-8.1.15.v20140411.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.15.v20140411/jetty-util-8.1.15.v20140411.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="8.1.15.v20140411" rev-constraint-default="8.1.15.v20140411" rev-constraint-dynamic="8.1.15.v20140411" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -210,9 +210,9 @@
 			</revision>
 		</module>
 		<module organisation="net.sourceforge.cssparser" name="cssparser">
-			<revision name="0.9.14" status="release" pubdate="20140509014756" resolver="public" artresolver="public" homepage="http://cssparser.sourceforge.net/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="82">
+			<revision name="0.9.14" status="release" pubdate="20140509014756" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cssparser.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="83">
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/lgpl.txt"/>
-				<metadata-artifact status="successful" details="" size="12067" time="369" location="/home/medvedev_vv/.ivy2/cache/net.sourceforge.cssparser/cssparser/ivy-0.9.14.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/net.sourceforge.cssparser/cssparser/ivy-0.9.14.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9.14/cssparser-0.9.14.pom"/>
+				<metadata-artifact status="no" details="" size="3574" time="0" location="/home/medvedev_vv/.ivy2/cache/net.sourceforge.cssparser/cssparser/ivy-0.9.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9.14/cssparser-0.9.14.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="0.9.14" rev-constraint-default="0.9.14" rev-constraint-dynamic="0.9.14" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="cssparser" type="jar" ext="jar" status="no" details="" size="354647" time="0" location="/home/medvedev_vv/.ivy2/cache/net.sourceforge.cssparser/cssparser/jars/cssparser-0.9.14.jar">
@@ -225,7 +225,7 @@
 			</revision>
 		</module>
 		<module organisation="org.w3c.css" name="sac">
-			<revision name="1.3" status="release" pubdate="20080323104250" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.w3.org/Style/CSS/SAC/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="83">
+			<revision name="1.3" status="release" pubdate="20080323104250" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.w3.org/Style/CSS/SAC/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="84">
 				<license name="The W3C Software License" url="http://www.w3.org/Consortium/Legal/copyright-software-19980720"/>
 				<metadata-artifact status="no" details="" size="2511" time="0" location="/home/medvedev_vv/.ivy2/cache/org.w3c.css/sac/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/w3c/css/sac/1.3/sac-1.3.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="1.0-SNAPSHOT"/>
@@ -240,7 +240,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sourceforge.nekohtml" name="nekohtml">
-			<revision name="1.9.21" status="release" pubdate="20140602172453" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nekohtml.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="81">
+			<revision name="1.9.21" status="release" pubdate="20140602172453" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nekohtml.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="82">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2568" time="0" location="/home/medvedev_vv/.ivy2/cache/net.sourceforge.nekohtml/nekohtml/ivy-1.9.21.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.21/nekohtml-1.9.21.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="1.9.21" rev-constraint-default="1.9.21" rev-constraint-dynamic="1.9.21" callerrev="1.0-SNAPSHOT"/>
@@ -255,7 +255,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sourceforge.htmlunit" name="htmlunit-core-js">
-			<revision name="2.15" status="release" pubdate="20140530205757" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="80">
+			<revision name="2.15" status="release" pubdate="20140530205757" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="81">
 				<license name="Mozilla Public License version 2.0" url="http://www.mozilla.org/MPL/2.0/"/>
 				<metadata-artifact status="no" details="" size="2513" time="0" location="/home/medvedev_vv/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/ivy-2.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.15/htmlunit-core-js-2.15.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.15" rev-constraint-default="2.15" rev-constraint-dynamic="2.15" callerrev="1.0-SNAPSHOT"/>
@@ -270,8 +270,8 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpmime">
-			<revision name="4.3.3" status="release" pubdate="20140222210636" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="79">
-				<metadata-artifact status="successful" details="" size="4933" time="369" location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.3.3.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.3.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3.3/httpmime-4.3.3.pom"/>
+			<revision name="4.3.3" status="release" pubdate="20140222210636" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="80">
+				<metadata-artifact status="no" details="" size="10152" time="0" location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.3.3/httpmime-4.3.3.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="4.3.3" rev-constraint-default="4.3.3" rev-constraint-dynamic="4.3.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="httpmime" type="jar" ext="jar" status="no" details="" size="37274" time="0" location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpmime/jars/httpmime-4.3.3.jar">
@@ -284,8 +284,8 @@
 			</revision>
 		</module>
 		<module organisation="commons-collections" name="commons-collections">
-			<revision name="3.2.1" status="release" pubdate="20080415080924" resolver="public" artresolver="public" homepage="http://commons.apache.org/collections/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="78">
-				<metadata-artifact status="successful" details="" size="12505" time="369" location="/home/medvedev_vv/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.1.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom"/>
+			<revision name="3.2.1" status="release" pubdate="20080415080924" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="79">
+				<metadata-artifact status="no" details="" size="4674" time="0" location="/home/medvedev_vv/.ivy2/cache/commons-collections/commons-collections/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="commons-collections" type="jar" ext="jar" status="no" details="" size="575389" time="0" location="/home/medvedev_vv/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar">
@@ -298,8 +298,8 @@
 			</revision>
 		</module>
 		<module organisation="xalan" name="xalan">
-			<revision name="2.7.1" status="release" pubdate="20080930150254" resolver="public" artresolver="public" homepage="http://xml.apache.org/xalan-j/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="77">
-				<metadata-artifact status="successful" details="" size="1277" time="360" location="/home/medvedev_vv/.ivy2/cache/xalan/xalan/ivy-2.7.1.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/xalan/xalan/ivy-2.7.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xalan/xalan/2.7.1/xalan-2.7.1.pom"/>
+			<revision name="2.7.1" status="release" pubdate="20080930150254" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/xalan-j/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="78">
+				<metadata-artifact status="no" details="" size="3021" time="0" location="/home/medvedev_vv/.ivy2/cache/xalan/xalan/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xalan/xalan/2.7.1/xalan-2.7.1.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="xalan" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3423100" time="0" location="/home/medvedev_vv/.ivy2/cache/xalan/xalan/srcs/xalan-2.7.1-sources.jar">
@@ -312,7 +312,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-chrome-driver">
-			<revision name="2.44.0" status="release" pubdate="20141024031257" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="64">
+			<revision name="2.44.0" status="release" pubdate="20141024031257" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="65">
 				<metadata-artifact status="no" details="" size="5769" time="0" location="/home/medvedev_vv/.ivy2/cache/org.seleniumhq.selenium/selenium-chrome-driver/ivy-2.44.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/2.44.0/selenium-chrome-driver-2.44.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.44.0" rev-constraint-default="2.44.0" rev-constraint-dynamic="2.44.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -326,7 +326,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-remote-driver">
-			<revision name="2.44.0" status="release" pubdate="20141024031235" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="65">
+			<revision name="2.44.0" status="release" pubdate="20141024031235" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="66">
 				<metadata-artifact status="no" details="" size="6756" time="0" location="/home/medvedev_vv/.ivy2/cache/org.seleniumhq.selenium/selenium-remote-driver/ivy-2.44.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/2.44.0/selenium-remote-driver-2.44.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.44.0" rev-constraint-default="2.44.0" rev-constraint-dynamic="2.44.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -340,7 +340,7 @@
 			</revision>
 		</module>
 		<module organisation="net.java.dev.jna" name="platform">
-			<revision name="3.4.0" status="release" pubdate="20111222052302" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="74">
+			<revision name="3.4.0" status="release" pubdate="20111222052302" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="75">
 				<license name="LGPL, version 2.1" url="http://creativecommons.org/licenses/LGPL/2.1/"/>
 				<metadata-artifact status="no" details="" size="2469" time="0" location="/home/medvedev_vv/.ivy2/cache/net.java.dev.jna/platform/ivy-3.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/platform/3.4.0/platform-3.4.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="3.4.0" rev-constraint-default="3.4.0" rev-constraint-dynamic="3.4.0" callerrev="1.0-SNAPSHOT"/>
@@ -355,7 +355,7 @@
 			</revision>
 		</module>
 		<module organisation="net.java.dev.jna" name="jna">
-			<revision name="3.4.0" status="release" pubdate="20111222052220" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="73">
+			<revision name="3.4.0" status="release" pubdate="20111222052220" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="74">
 				<license name="LGPL, version 2.1" url="http://creativecommons.org/licenses/LGPL/2.1/"/>
 				<metadata-artifact status="no" details="" size="2450" time="0" location="/home/medvedev_vv/.ivy2/cache/net.java.dev.jna/jna/ivy-3.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/3.4.0/jna-3.4.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="3.4.0" rev-constraint-default="3.4.0" rev-constraint-dynamic="3.4.0" callerrev="1.0-SNAPSHOT"/>
@@ -370,7 +370,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-exec">
-			<revision name="1.1" status="release" pubdate="20101020041142" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/exec/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="72">
+			<revision name="1.1" status="release" pubdate="20101020041142" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/exec/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="73">
 				<metadata-artifact status="no" details="" size="6054" time="0" location="/home/medvedev_vv/.ivy2/cache/org.apache.commons/commons-exec/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -384,8 +384,8 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpclient">
-			<revision name="4.3.4" status="release" pubdate="20140531221950" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="69">
-				<metadata-artifact status="successful" details="" size="5209" time="368" location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.3.4.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.3.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.4/httpclient-4.3.4.pom"/>
+			<revision name="4.3.4" status="release" pubdate="20140531221950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="70">
+				<metadata-artifact status="no" details="" size="10482" time="0" location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.4/httpclient-4.3.4.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="4.3.4" rev-constraint-default="4.3.4" rev-constraint-dynamic="4.3.4" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="655841" time="0" location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.3.4-sources.jar">
@@ -398,8 +398,8 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpcore">
-			<revision name="4.3.2" status="release" pubdate="20140213034411" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="70">
-				<metadata-artifact status="successful" details="" size="4597" time="366" location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.3.2.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.3.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.pom"/>
+			<revision name="4.3.2" status="release" pubdate="20140213034411" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="71">
+				<metadata-artifact status="no" details="" size="7627" time="0" location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="4.3.2" rev-constraint-default="4.3.2" rev-constraint-dynamic="4.3.2" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="282269" time="0" location="/home/medvedev_vv/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.3.2.jar">
@@ -412,8 +412,8 @@
 			</revision>
 		</module>
 		<module organisation="commons-logging" name="commons-logging">
-			<revision name="1.1.3" status="release" pubdate="20130517030523" resolver="public" artresolver="public" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="71">
-				<metadata-artifact status="successful" details="" size="18353" time="368" location="/home/medvedev_vv/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.3.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom"/>
+			<revision name="1.1.3" status="release" pubdate="20130517030523" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="72">
+				<metadata-artifact status="no" details="" size="10193" time="0" location="/home/medvedev_vv/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="62050" time="0" location="/home/medvedev_vv/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.3.jar">
@@ -426,7 +426,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-api">
-			<revision name="2.44.0" status="release" pubdate="20141024031206" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="68">
+			<revision name="2.44.0" status="release" pubdate="20141024031206" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="69">
 				<metadata-artifact status="no" details="" size="5893" time="0" location="/home/medvedev_vv/.ivy2/cache/org.seleniumhq.selenium/selenium-api/ivy-2.44.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/2.44.0/selenium-api-2.44.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.44.0" rev-constraint-default="2.44.0" rev-constraint-dynamic="2.44.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -440,7 +440,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.gson" name="gson">
-			<revision name="2.3" status="release" pubdate="20140812064157" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="67">
+			<revision name="2.3" status="release" pubdate="20140812064157" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="68">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3255" time="0" location="/home/medvedev_vv/.ivy2/cache/com.google.code.gson/gson/ivy-2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.3/gson-2.3.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="1.0-SNAPSHOT"/>
@@ -455,7 +455,7 @@
 			</revision>
 		</module>
 		<module organisation="cglib" name="cglib-nodep">
-			<revision name="2.1_3" status="release" pubdate="20051109041406" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="66">
+			<revision name="2.1_3" status="release" pubdate="20051109041406" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="67">
 				<metadata-artifact status="no" details="" size="2343" time="0" location="/home/medvedev_vv/.ivy2/cache/cglib/cglib-nodep/ivy-2.1_3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.1_3" rev-constraint-default="2.1_3" rev-constraint-dynamic="2.1_3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -469,7 +469,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.findbugs" name="jsr305">
-			<revision name="2.0.3" status="release" pubdate="20131231142623" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://code.google.com/p/jsr-305/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="61">
+			<revision name="2.0.3" status="release" pubdate="20131231142623" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://code.google.com/p/jsr-305/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="62">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2395" time="0" location="/home/medvedev_vv/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-2.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.0.3" rev-constraint-default="2.0.3" rev-constraint-dynamic="2.0.3" callerrev="1.0-SNAPSHOT"/>
@@ -484,7 +484,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.slick" name="slick-codegen_2.11">
-			<revision name="3.1.1" status="release" pubdate="20151216021538" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
+			<revision name="3.1.1" status="release" pubdate="20151216021538" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="54">
 				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="2762" time="0" location="/home/medvedev_vv/.ivy2/cache/com.typesafe.slick/slick-codegen_2.11/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick-codegen_2.11/3.1.1/slick-codegen_2.11-3.1.1.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0-SNAPSHOT"/>
@@ -499,7 +499,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.slick" name="slick_2.11">
-			<revision name="3.1.1" status="release" pubdate="20151216021716" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="54">
+			<revision name="3.1.1" status="release" pubdate="20151216021716" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="55">
 				<license name="Two-clause BSD-style license" url="http://github.com/slick/slick/blob/master/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="3130" time="0" location="/home/medvedev_vv/.ivy2/cache/com.typesafe.slick/slick_2.11/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick_2.11/3.1.1/slick_2.11-3.1.1.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0-SNAPSHOT"/>
@@ -509,6 +509,21 @@
 					</artifact>
 					<artifact name="slick_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="293720" time="0" location="/home/medvedev_vv/.ivy2/cache/com.typesafe.slick/slick_2.11/srcs/slick_2.11-3.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/slick/slick_2.11/3.1.1/slick_2.11-3.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="5.1.38" status="release" pubdate="20151202140206" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
+				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2412" time="0" location="/home/medvedev_vv/.ivy2/cache/mysql/mysql-connector-java/ivy-5.1.38.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.pom"/>
+				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="5.1.38" rev-constraint-default="5.1.38" rev-constraint-dynamic="5.1.38" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="894870" time="0" location="/home/medvedev_vv/.ivy2/cache/mysql/mysql-connector-java/srcs/mysql-connector-java-5.1.38-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38-sources.jar"/>
+					</artifact>
+					<artifact name="mysql-connector-java" type="jar" ext="jar" status="no" details="" size="983911" time="0" location="/home/medvedev_vv/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.38.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -618,9 +633,9 @@
 			</revision>
 		</module>
 		<module organisation="com.zaxxer" name="HikariCP">
-			<revision name="2.3.7" status="release" pubdate="20150422065645" resolver="public" artresolver="public" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="46">
+			<revision name="2.3.7" status="release" pubdate="20150422065645" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="46">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="14314" time="487" location="/home/medvedev_vv/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.3.7.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.3.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.3.7/HikariCP-2.3.7.pom"/>
+				<metadata-artifact status="no" details="" size="6046" time="0" location="/home/medvedev_vv/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.3.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.3.7/HikariCP-2.3.7.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.3.7" rev-constraint-default="2.3.7" rev-constraint-dynamic="2.3.7" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="HikariCP" type="jar" ext="jar" status="no" details="" size="98690" time="0" location="/home/medvedev_vv/.ivy2/cache/com.zaxxer/HikariCP/jars/HikariCP-2.3.7.jar">
@@ -738,8 +753,8 @@
 			</revision>
 		</module>
 		<module organisation="com.google.guava" name="guava">
-			<revision name="18.0" status="release" pubdate="20140826014834" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="60">
-				<metadata-artifact status="successful" details="" size="5666" time="367" location="/home/medvedev_vv/.ivy2/cache/com.google.guava/guava/ivy-18.0.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/com.google.guava/guava/ivy-18.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom"/>
+			<revision name="18.0" status="release" pubdate="20140826014834" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="61">
+				<metadata-artifact status="no" details="" size="5849" time="0" location="/home/medvedev_vv/.ivy2/cache/com.google.guava/guava/ivy-18.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="18.0" rev-constraint-default="18.0" rev-constraint-dynamic="18.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="guava" type="jar" ext="jar" status="no" details="" size="2256213" time="0" location="/home/medvedev_vv/.ivy2/cache/com.google.guava/guava/jars/guava-18.0.jar">
@@ -969,8 +984,8 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="jcl-over-slf4j">
-			<revision name="1.7.12" status="release" pubdate="20150327025128" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="26">
-				<metadata-artifact status="successful" details="" size="1840" time="376" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.pom"/>
+			<revision name="1.7.12" status="release" pubdate="20150327025128" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="26">
+				<metadata-artifact status="no" details="" size="5094" time="0" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23213" time="0" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.12-sources.jar">
@@ -983,8 +998,8 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="jul-to-slf4j">
-			<revision name="1.7.12" status="release" pubdate="20150327025151" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="25">
-				<metadata-artifact status="successful" details="" size="1963" time="385" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.pom"/>
+			<revision name="1.7.12" status="release" pubdate="20150327025151" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="25">
+				<metadata-artifact status="no" details="" size="5133" time="0" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="jul-to-slf4j" type="jar" ext="jar" status="no" details="" size="4736" time="0" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar">
@@ -1207,7 +1222,7 @@
 			</revision>
 		</module>
 		<module organisation="com.novocode" name="junit-interface">
-			<revision name="0.11" status="release" pubdate="20140814152745" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/sbt/junit-interface/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="58">
+			<revision name="0.11" status="release" pubdate="20140814152745" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/sbt/junit-interface/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="59">
 				<license name="Two-clause BSD-style license" url="http://github.com/sbt/junit-interface/blob/master/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="2865" time="0" location="/home/medvedev_vv/.ivy2/cache/com.novocode/junit-interface/ivy-0.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/novocode/junit-interface/0.11/junit-interface-0.11.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="0.11" rev-constraint-default="0.11" rev-constraint-dynamic="0.11" callerrev="1.0-SNAPSHOT"/>
@@ -1222,7 +1237,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="test-interface">
-			<revision name="1.0" status="release" pubdate="20130629054435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="59">
+			<revision name="1.0" status="release" pubdate="20130629054435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="60">
 				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
 				<metadata-artifact status="no" details="" size="2589" time="0" location="/home/medvedev_vv/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0-SNAPSHOT"/>
@@ -1344,7 +1359,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-io" name="commons-io">
-			<revision name="2.4" status="release" pubdate="20120613052206" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="84">
+			<revision name="2.4" status="release" pubdate="20120613052206" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="85">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="8704" time="0" location="/home/medvedev_vv/.ivy2/cache/commons-io/commons-io/ivy-2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.0-SNAPSHOT"/>
@@ -1359,7 +1374,7 @@
 			</revision>
 		</module>
 		<module organisation="junit" name="junit">
-			<revision name="4.12" status="release" pubdate="20141204221743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="56">
+			<revision name="4.12" status="release" pubdate="20141204221743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="57">
 				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<metadata-artifact status="no" details="" size="3317" time="0" location="/home/medvedev_vv/.ivy2/cache/junit/junit/ivy-4.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="1.0-SNAPSHOT"/>
@@ -1371,7 +1386,7 @@
 			</revision>
 		</module>
 		<module organisation="org.hamcrest" name="hamcrest-core">
-			<revision name="1.3" status="release" pubdate="20120710040802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="57">
+			<revision name="1.3" status="release" pubdate="20120710040802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="58">
 				<license name="New BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="2617" time="0" location="/home/medvedev_vv/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="test, compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="1.0-SNAPSHOT"/>

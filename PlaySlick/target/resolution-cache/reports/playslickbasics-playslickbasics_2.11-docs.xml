@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="docs"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170124113638"/>
+		date="20170124121259"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-omnidoc_2.11">
 			<revision name="2.4.6" status="release" pubdate="20151214142615" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/omnidoc" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
@@ -439,7 +439,7 @@
 		</module>
 		<module organisation="org.slf4j" name="jcl-over-slf4j">
 			<revision name="1.7.12" status="release" pubdate="20150327025128" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
-				<metadata-artifact status="successful" details="" size="1840" time="373" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.pom"/>
+				<metadata-artifact status="successful" details="" size="1840" time="380" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.pom"/>
 				<caller organisation="com.typesafe.play" name="play_2.11" conf="compile, runtime" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="2.4.6"/>
 				<caller organisation="com.typesafe.play" name="play-netty-utils" conf="compile, runtime" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="2.4.6"/>
 				<artifacts>
@@ -451,7 +451,7 @@
 		</module>
 		<module organisation="org.slf4j" name="jul-to-slf4j">
 			<revision name="1.7.12" status="release" pubdate="20150327025151" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
-				<metadata-artifact status="successful" details="" size="1963" time="385" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.pom"/>
+				<metadata-artifact status="successful" details="" size="1963" time="383" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.pom"/>
 				<caller organisation="com.typesafe.play" name="play_2.11" conf="compile, runtime" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="2.4.6"/>
 				<caller organisation="com.typesafe.play" name="play-netty-utils" conf="compile, runtime" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="2.4.6"/>
 				<artifacts>

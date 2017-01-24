@@ -4,7 +4,7 @@
 		module="playslickbasics_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170124113638"
+		publication="20170124121259"
 	>
 		<description>
 		PlaySlickBasics
@@ -42,6 +42,7 @@
 		<dependency org="com.typesafe.play" name="play-jdbc_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-jdbc-evolutions_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-slick_2.11" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="mysql" name="mysql-connector-java" rev="5.1.38" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.slick" name="slick-codegen_2.11" rev="3.1.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

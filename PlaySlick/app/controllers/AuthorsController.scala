@@ -7,9 +7,7 @@ import play.api.libs.json.Json
 import scala.concurrent.Future
 import models._
 import dao.AuthorDAO
-/**
- * Created by medvedev_vv on 24.01.17.
- */
+
 class AuthorsController @Inject() (authorDAO: AuthorDAO) extends Controller {
 
   def findAll = Action.async { implicit request =>

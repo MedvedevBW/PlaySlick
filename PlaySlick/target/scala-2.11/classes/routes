@@ -2,16 +2,16 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# addresses
-GET      /addresses       controllers.AddressController.findAll
-GET      /addresses/:id   controllers.AddressController.findById(id: Int)
-POST     /addresses       controllers.AddressController.create
-PUT      /addresses/:id   controllers.AddressController.update(id: Int)
-DELETE   /addresses/:id   controllers.AddressController.delete(id: Int)
+# authors
+GET      /authors       controllers.AuthorsController.findAll
+GET      /authors/:id   controllers.AuthorsController.findById(id: Int)
+POST     /authors       controllers.AuthorsController.create
+PUT      /authors/:id   controllers.AuthorsController.update(id: Int)
+DELETE   /authors/:id   controllers.AuthorsController.delete(id: Int)
 
-# persons
-GET      /persons         controllers.PersonController.findAll
-GET      /persons/:id     controllers.PersonController.findById(id: Int)
-POST     /persons         controllers.PersonController.create
-PUT      /persons/:id     controllers.PersonController.update(id: Int)
-DELETE   /persons/:id     controllers.PersonController.delete(id: Int)
+# books
+GET      /books         controllers.BooksController.findAll
+GET      /books/:id     controllers.BooksController.findById(id: Int)
+POST     /books         controllers.BooksController.create
+PUT      /books/:id     controllers.BooksController.update(id: Int)
+DELETE   /books/:id     controllers.BooksController.delete(id: Int)

@@ -4,7 +4,7 @@
 		module="playslickbasics$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170124113810"
+		publication="20170124120241"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -185,6 +185,9 @@
 		</dependency>
 		<dependency org="com.zaxxer" name="HikariCP-java6" rev="2.3.7" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="HikariCP-java6" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="mysql" name="mysql-connector-java" rev="5.1.38" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="mysql-connector-java" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="com.typesafe.slick" name="slick-codegen_2.11" rev="3.1.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="slick-codegen_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>

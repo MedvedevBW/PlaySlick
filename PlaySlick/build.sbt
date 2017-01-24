@@ -10,6 +10,7 @@ libraryDependencies ++= Seq(
   jdbc,
   evolutions,
   "com.typesafe.play" %% "play-slick" % "1.1.1",		// PlaySlick
+  "mysql" % "mysql-connector-java" % "5.1.38",			// JDBC driver
   "com.typesafe.slick" %% "slick-codegen" % "3.1.1"		// for generating code
 )
 
