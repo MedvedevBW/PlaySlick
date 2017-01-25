@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/medvedev_vv/IdeaProjects/play-slick-master2/conf/routes
-// @DATE:Tue Jan 24 12:17:23 NOVT 2017
+// @SOURCE:/home/medvedev_vv/git/PlaySlick/conf/routes
+// @DATE:Wed Jan 25 17:06:06 NOVT 2017
 
 package router
 
@@ -42,12 +42,12 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """authors""", """controllers.AuthorsController.findAll"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """authors""", """controllers.AuthorsController.findAll(p:Int ?= 0, l:Int ?= 10, s:Int ?= 1, f:String ?= "")"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """authors/$id<[^/]+>""", """controllers.AuthorsController.findById(id:Int)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """authors""", """controllers.AuthorsController.create"""),
     ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """authors/$id<[^/]+>""", """controllers.AuthorsController.update(id:Int)"""),
     ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """authors/$id<[^/]+>""", """controllers.AuthorsController.delete(id:Int)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books""", """controllers.BooksController.findAll"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books""", """controllers.BooksController.findAll(p:Int ?= 0, l:Int ?= 10, s:Int ?= 1, f:String ?= "", a:Option[Int] ?= None)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books/$id<[^/]+>""", """controllers.BooksController.findById(id:Int)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books""", """controllers.BooksController.create"""),
     ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """books/$id<[^/]+>""", """controllers.BooksController.update(id:Int)"""),
@@ -64,12 +64,12 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("authors")))
   )
   private[this] lazy val controllers_AuthorsController_findAll0_invoker = createInvoker(
-    AuthorsController_0.findAll,
+    AuthorsController_0.findAll(fakeValue[Int], fakeValue[Int], fakeValue[Int], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.AuthorsController",
       "findAll",
-      Nil,
+      Seq(classOf[Int], classOf[Int], classOf[Int], classOf[String]),
       "GET",
       """ authors""",
       this.prefix + """authors"""
@@ -149,12 +149,12 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("books")))
   )
   private[this] lazy val controllers_BooksController_findAll5_invoker = createInvoker(
-    BooksController_1.findAll,
+    BooksController_1.findAll(fakeValue[Int], fakeValue[Int], fakeValue[Int], fakeValue[String], fakeValue[Option[Int]]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.BooksController",
       "findAll",
-      Nil,
+      Seq(classOf[Int], classOf[Int], classOf[Int], classOf[String], classOf[Option[Int]]),
       "GET",
       """ books""",
       this.prefix + """books"""
@@ -234,8 +234,8 @@ class Routes(
   
     // @LINE:6
     case controllers_AuthorsController_findAll0_route(params) =>
-      call { 
-        controllers_AuthorsController_findAll0_invoker.call(AuthorsController_0.findAll)
+      call(params.fromQuery[Int]("p", Some(0)), params.fromQuery[Int]("l", Some(10)), params.fromQuery[Int]("s", Some(1)), params.fromQuery[String]("f", Some(""))) { (p, l, s, f) =>
+        controllers_AuthorsController_findAll0_invoker.call(AuthorsController_0.findAll(p, l, s, f))
       }
   
     // @LINE:7
@@ -264,8 +264,8 @@ class Routes(
   
     // @LINE:13
     case controllers_BooksController_findAll5_route(params) =>
-      call { 
-        controllers_BooksController_findAll5_invoker.call(BooksController_1.findAll)
+      call(params.fromQuery[Int]("p", Some(0)), params.fromQuery[Int]("l", Some(10)), params.fromQuery[Int]("s", Some(1)), params.fromQuery[String]("f", Some("")), params.fromQuery[Option[Int]]("a", Some(None))) { (p, l, s, f, a) =>
+        controllers_BooksController_findAll5_invoker.call(BooksController_1.findAll(p, l, s, f, a))
       }
   
     // @LINE:14

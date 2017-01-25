@@ -18,7 +18,7 @@ trait Tables {
   implicit def GetResultAuthorRow(implicit e0: GR[Int], e1: GR[String], e3: GR[Date]): GR[AuthorRow] = GR {
     prs =>
       import prs._
-      AuthorRow.tupled((<<[Int], <<[String], <<[String], <<[String], <<[Date]))
+      AuthorRow.tupled((<<[Int], <<[String], <<[String], <<[Option[String]], <<[Date]))
   }
   /** Table description of table author. Objects of this class serve as prototypes for rows in queries. */
   class Author(_tableTag: Tag) extends Table[AuthorRow](_tableTag, "author") {
@@ -35,7 +35,7 @@ trait Tables {
     /** Database column surname SqlType(VARCHAR), Length(100,true) */
     val surname: Rep[String] = column[String]("surname", O.Length(100, varying = true))
     /** Database column middlename SqlType(VARCHAR), Length(100,true) */
-    val middlename: Rep[String] = column[String]("middlename", O.Length(100))
+    val middlename: Rep[Option[String]] = column[String]("middlename", O.Length(100)).?
     /** Database column birthday SqlType(date) */
     val birthday: Rep[Date] = column[Date]("birthday")
   }
@@ -48,7 +48,7 @@ trait Tables {
   implicit def GetResultBookRow(implicit e0: GR[Int], e1: GR[String], e3: GR[Date]): GR[BookRow] = GR {
     prs =>
       import prs._
-      BookRow.tupled((<<[Int], <<[String], <<[String], <<[Date], <<[String]))
+      BookRow.tupled((<<[Int], <<[String], <<[Option[String]], <<[Date], <<[String]))
   }
   /** Table description of table book. Objects of this class serve as prototypes for rows in queries. */
   class Book(_tableTag: Tag) extends Table[BookRow](_tableTag, "book") {
@@ -63,7 +63,7 @@ trait Tables {
     /** Database column title SqlType(VARCHAR), Length(100,true) */
     val title: Rep[String] = column[String]("title", O.Length(100, varying = true))
     /** Database column subtitle SqlType(VARCHAR), Length(100,true) */
-    val subtitle: Rep[String] = column[String]("subtitle", O.Length(100))
+    val subtitle: Rep[Option[String]] = column[String]("subtitle", O.Length(100)).?
     /** Database column pubDate SqlType(date) */
     val pubDate: Rep[Date] = column[Date]("pubDate")
     /** Database column pubHouse SqlType(VARCHAR), Length(100,true) */
@@ -95,9 +95,9 @@ trait Tables {
     val pk = primaryKey("author_book_PK", (authorId, bookId))
 
     /** Foreign key referencing Author (database name author_book_author_fk) */
-    lazy val authorFk = foreignKey("author_author_book_fk", authorId, Author)(r => r.authorId, onUpdate = ForeignKeyAction.NoAction, onDelete = ForeignKeyAction.NoAction)
+    lazy val authorFk = foreignKey("author_author_book_fk", authorId, Author)(r => r.authorId, onUpdate = ForeignKeyAction.Cascade, onDelete = ForeignKeyAction.Cascade)
     /** Foreign key referencing Book (database name book_author_book_fk) */
-    lazy val bookFk = foreignKey("book_author_book_fk", bookId, Book)(r => r.bookId, onUpdate = ForeignKeyAction.NoAction, onDelete = ForeignKeyAction.NoAction)
+    lazy val bookFk = foreignKey("book_author_book_fk", bookId, Book)(r => r.bookId, onUpdate = ForeignKeyAction.Cascade, onDelete = ForeignKeyAction.Cascade)
   }
   /** Collection-like TableQuery object for table AuthorBook */
   lazy val AuthorBook = new TableQuery(tag => new AuthorBook(tag))

@@ -1,34 +1,40 @@
 package controllers
 
 import javax.inject.Inject
+
 import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.json.Json
+
 import scala.concurrent.Future
 import models._
 import dao._
+import models.inline.InlineModelBook
 
 class BooksController @Inject() (bookDAO: BookDAO) extends Controller {
 
-  def findAll = Action.async { implicit request =>
+  def findAll(page: Int, pageSize: Int, orderBy: Int, filter: String, authId: Option[Int]) = Action.async { implicit request =>
 
-    bookDAO.findAll map {
-      books => Ok(Json.toJson(books))
-    }
+    val count = bookDAO.count(filter)
+    val books = bookDAO.findAllOrByAuthorId(page, pageSize, orderBy, "%" + filter + "%", authId)
+    for {
+      a <- count
+      b <- books
+    } yield Ok(Json.toJson(InlineModelBook(MetaAPI(a, pageSize, page), b)))
   }
 
   def findById(id: Int) = Action.async { implicit request =>
 
     bookDAO.findById(id) map {
       case Some(book) => Ok(Json.toJson(book))
-      case _ => BadRequest(Json.obj("error" -> s"Book with id $id doesn't exist"))
+      case _ => BadRequest(Json.obj("error" -> s"Book doesn't exist"))
     }
   }
 
   def delete(id: Int) = Action.async { implicit request =>
 
     bookDAO.delete(id) map {
-      numDeleted => Ok(Json.obj("count" -> numDeleted))
+      _ => Ok(Json.obj("success" -> "deleted"))
     }
   }
 
@@ -37,7 +43,7 @@ class BooksController @Inject() (bookDAO: BookDAO) extends Controller {
     request.body.validate[BookAPI].map {
       bookAPI =>
         bookDAO.create(bookAPI) map {
-          bookID => Ok(Json.obj("id" -> bookID))
+          _ => Ok(Json.obj("success" -> "created"))
         }
     } recoverTotal { t =>
       Future.successful(BadRequest(Json.obj("error" -> "Wrong JSON format")))
@@ -49,7 +55,7 @@ class BooksController @Inject() (bookDAO: BookDAO) extends Controller {
     request.body.validate[BookAPI].map {
       bookAPI =>
         bookDAO.update(id, bookAPI) map {
-          numUpdated => Ok(Json.obj("count" -> numUpdated))
+          _ => Ok(Json.obj("success" -> "updated"))
         }
     } recoverTotal { t =>
       Future.successful(BadRequest(Json.obj("error" -> "Wrong JSON format")))

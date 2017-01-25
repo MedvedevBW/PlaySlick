@@ -4,7 +4,7 @@
 		module="playslickbasics$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170124120241"
+		publication="20170125102856"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

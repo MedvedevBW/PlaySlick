@@ -8,14 +8,14 @@ case class AuthorRow(
   authorId: Int,
   name: String,
   surname: String,
-  middlename: String,
+  middlename: Option[String],
   birthday: Date
 )
 
 case class BookRow(
   bookId: Int,
   title: String,
-  subtitle: String,
+  subtitle: Option[String],
   pubDate: Date,
   pubHouse: String
 )

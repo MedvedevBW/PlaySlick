@@ -1,20 +1,27 @@
 package controllers
 
 import javax.inject.Inject
+
 import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.json.Json
+
 import scala.concurrent.Future
 import models._
 import dao.AuthorDAO
+import models.inline.InlineModelAuthor
 
 class AuthorsController @Inject() (authorDAO: AuthorDAO) extends Controller {
 
-  def findAll = Action.async { implicit request =>
+  def findAll(page: Int, pageSize: Int, orderBy: Int, filter: String = "") = Action.async { implicit request =>
 
-    authorDAO.findAll map {
-      authors => Ok(Json.toJson(authors))
-    }
+    val count = authorDAO.count(filter)
+    val authors = authorDAO.findAll(page, pageSize, orderBy, "%" + filter + "%")
+    for {
+      a <- count
+      b <- authors
+    } yield Ok(Json.toJson(InlineModelAuthor(MetaAPI(a, pageSize, page), b)))
+
   }
 
   def findById(id: Int) = Action.async { implicit request =>
@@ -28,7 +35,7 @@ class AuthorsController @Inject() (authorDAO: AuthorDAO) extends Controller {
   def delete(id: Int) = Action.async { implicit request =>
 
     authorDAO.delete(id) map {
-      numDeleted => Ok(Json.obj("count" -> numDeleted))
+      _ => Ok(Json.obj("success" -> "deleted"))
     }
   }
 
@@ -37,7 +44,7 @@ class AuthorsController @Inject() (authorDAO: AuthorDAO) extends Controller {
     request.body.validate[AuthorAPI].map {
       authorAPI =>
         authorDAO.create(authorAPI) map {
-          authorId => Ok(Json.obj("id" -> authorId))
+          _ => Ok(Json.obj("success" -> "created"))
         }
     } recoverTotal { t =>
       Future.successful(BadRequest(Json.obj("error" -> "Wrong JSON format")))
@@ -49,7 +56,7 @@ class AuthorsController @Inject() (authorDAO: AuthorDAO) extends Controller {
     request.body.validate[AuthorAPI].map {
       authorAPI =>
         authorDAO.update(id, authorAPI) map {
-          numUpdated => Ok(Json.obj("count" -> numUpdated))
+          _ => Ok(Json.obj("success" -> "updated"))
         }
     } recoverTotal { t =>
       Future.successful(BadRequest(Json.obj("error" -> "Wrong JSON format")))

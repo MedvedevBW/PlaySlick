@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/medvedev_vv/IdeaProjects/play-slick-master2/conf/routes
-// @DATE:Tue Jan 24 12:17:23 NOVT 2017
+// @SOURCE:/home/medvedev_vv/git/PlaySlick/conf/routes
+// @DATE:Wed Jan 25 17:06:06 NOVT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -44,9 +44,9 @@ package controllers {
     }
   
     // @LINE:6
-    def findAll(): Call = {
+    def findAll(p:Int = 0, l:Int = 10, s:Int = 1, f:String = ""): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "authors")
+      Call("GET", _prefix + { _defaultPrefix } + "authors" + queryString(List(if(p == 0) None else Some(implicitly[QueryStringBindable[Int]].unbind("p", p)), if(l == 10) None else Some(implicitly[QueryStringBindable[Int]].unbind("l", l)), if(s == 1) None else Some(implicitly[QueryStringBindable[Int]].unbind("s", s)), if(f == "") None else Some(implicitly[QueryStringBindable[String]].unbind("f", f)))))
     }
   
   }
@@ -83,9 +83,9 @@ package controllers {
     }
   
     // @LINE:13
-    def findAll(): Call = {
+    def findAll(p:Int = 0, l:Int = 10, s:Int = 1, f:String = "", a:Option[Int] = None): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "books")
+      Call("GET", _prefix + { _defaultPrefix } + "books" + queryString(List(if(p == 0) None else Some(implicitly[QueryStringBindable[Int]].unbind("p", p)), if(l == 10) None else Some(implicitly[QueryStringBindable[Int]].unbind("l", l)), if(s == 1) None else Some(implicitly[QueryStringBindable[Int]].unbind("s", s)), if(f == "") None else Some(implicitly[QueryStringBindable[String]].unbind("f", f)), if(a == None) None else Some(implicitly[QueryStringBindable[Option[Int]]].unbind("a", a)))))
     }
   
   }

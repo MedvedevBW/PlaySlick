@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170124120241"/>
+		date="20170125102857"/>
 	<dependencies>
 		<module organisation="com.typesafe.slick" name="slick-codegen_2.11">
 			<revision name="3.1.1" status="release" pubdate="20151216021538" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://slick.typesafe.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="55">
@@ -159,9 +159,9 @@
 			</revision>
 		</module>
 		<module organisation="com.zaxxer" name="HikariCP">
-			<revision name="2.3.7" status="release" pubdate="20150422065645" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="47">
+			<revision name="2.3.7" status="release" pubdate="20150422065645" resolver="public" artresolver="public" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="47">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="6046" time="0" location="/home/medvedev_vv/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.3.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.3.7/HikariCP-2.3.7.pom"/>
+				<metadata-artifact status="successful" details="" size="14314" time="478" location="/home/medvedev_vv/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.3.7.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.3.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.3.7/HikariCP-2.3.7.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="compile" rev="2.3.7" rev-constraint-default="2.3.7" rev-constraint-dynamic="2.3.7" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="HikariCP" type="jar" ext="jar" status="no" details="" size="98690" time="0" location="/home/medvedev_vv/.ivy2/cache/com.zaxxer/HikariCP/jars/HikariCP-2.3.7.jar">
@@ -503,8 +503,8 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="jcl-over-slf4j">
-			<revision name="1.7.12" status="release" pubdate="20150327025128" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="26">
-				<metadata-artifact status="no" details="" size="5094" time="0" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.pom"/>
+			<revision name="1.7.12" status="release" pubdate="20150327025128" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="26">
+				<metadata-artifact status="successful" details="" size="1840" time="395" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="compile" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23213" time="0" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.12-sources.jar">
@@ -517,8 +517,8 @@
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="jul-to-slf4j">
-			<revision name="1.7.12" status="release" pubdate="20150327025151" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="25">
-				<metadata-artifact status="no" details="" size="5133" time="0" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.pom"/>
+			<revision name="1.7.12" status="release" pubdate="20150327025151" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="25">
+				<metadata-artifact status="successful" details="" size="1963" time="533" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml" searched="true" original-local-location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.pom"/>
 				<caller organisation="playslickbasics" name="playslickbasics$sources_2.11" conf="compile" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="jul-to-slf4j" type="jar" ext="jar" status="no" details="" size="4736" time="0" location="/home/medvedev_vv/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar">

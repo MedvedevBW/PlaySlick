@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/medvedev_vv/IdeaProjects/play-slick-master2/conf/routes
-// @DATE:Tue Jan 24 12:17:23 NOVT 2017
+// @SOURCE:/home/medvedev_vv/git/PlaySlick/conf/routes
+// @DATE:Wed Jan 25 17:06:06 NOVT 2017
 
 
 package router {
