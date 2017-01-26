@@ -17,8 +17,14 @@ class BookDAO @Inject() (protected val dbConfigProvider: DatabaseConfigProvider)
   val profile = driver
   import driver.api._
 
-  def count(filter: String): Future[Int] = {
-    db.run(Book.filter { book => book.title.toLowerCase.like(filter.toLowerCase) }.length.result)
+  def count(filter: String, authorId: Option[Int]): Future[Int] = {
+    val countQuery = authorId match {
+      case None => db.run(Book.filter { book => book.title.toLowerCase.like(filter.toLowerCase) }.length.result)
+      case Some(authorId) => db.run(Book.filter { book => book.title.toLowerCase.like(filter.toLowerCase) }.join(
+        AuthorBook.filter(_.authorId === authorId)
+      ).on(_.bookId === _.bookId).length.result)
+    }
+    countQuery
   }
 
   def findById(id: Int)(implicit ec: ExecutionContext): Future[Option[BookAPI]] = {

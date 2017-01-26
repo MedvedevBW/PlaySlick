@@ -15,7 +15,7 @@ class BooksController @Inject() (bookDAO: BookDAO) extends Controller {
 
   def findAll(page: Int, pageSize: Int, orderBy: Int, filter: String, authId: Option[Int]) = Action.async { implicit request =>
 
-    val count = bookDAO.count(filter)
+    val count = bookDAO.count(filter, authId)
     val books = bookDAO.findAllOrByAuthorId(page, pageSize, orderBy, "%" + filter + "%", authId)
     for {
       a <- count
