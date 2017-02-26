@@ -34,6 +34,8 @@ class AuthorDAO @Inject() (protected val dbConfigProvider: DatabaseConfigProvide
 
     val authorsQuery = Author.filter { author => author.name.toLowerCase.like(inFilter.toLowerCase) }
 
+    val test: String = "hi"
+
     val sortQuery = orderBy match {
       case -5 => authorsQuery.sortBy(_.birthday.desc)
       case -4 => authorsQuery.sortBy(_.middlename.desc)
